@@ -1,6 +1,6 @@
 const bar = document.querySelector('#readingBar');
 const links = [...document.querySelectorAll('.topbar nav a')];
-const sections = links.map((link) => document.querySelector(link.getAttribute('href'))).filter(Boolean);
+const sections = links.filter((link) => link.getAttribute('href').startsWith('#')).map((link) => document.querySelector(link.getAttribute('href'))).filter(Boolean);
 
 function updateProgress() {
   const max = document.documentElement.scrollHeight - window.innerHeight;
