@@ -112,6 +112,91 @@
       <article class="evidence-block" id="evidence-feedback">
         <div class="evidence-heading"><div><span>01 / USER FEEDBACK</span><h3>定向测试与真实业务反馈</h3></div><p>原表共 4 条反馈记录：2 条定向任务、2 条真实业务。以下保留具体观察与可执行问题，不把个别案例冒充总体发生率。</p></div>
         <div class="evidence-cards"><div><b>定向任务 · 记录 1</b><p>人物立绘和场景背景未报告问题；动作图中持刀手势、刀柄连接异常；世界观图出现多余中文；海报元素融合突兀；图生图鞋色漂移。高架桥和多人办公室视频模糊不可用，室内情绪与雪地动作两项评价较好。部分模型直到点击生成后才告知不可用。</p></div><div><b>定向任务 · 记录 2</b><p>Z-image 出现披风缺失、能量线路数量不符；booyu-image-turbo 有模糊和多刀问题。文生视频脸部不清，图生视频相对可用；未观察到乱说台词。反馈者建议分段提示词，并试验“插值扩展 sigma”节点，但参数方案尚需研发复测。</p></div><div><b>真实业务 · 广告投流</b><p>用户用 Codex 生成活动文案和投放图片提示词，对 9:16 画面、权益卡、单一转化组件、品牌色与 Logo 安全区都有明确要求。实际卡点是图片细节里的中文糊字、错字和异常字；此处文字正确性直接影响素材投放。</p></div><div><b>真实业务 · 漫剧 / 互动内容</b><p>报告部分图片模型生成失败、AI 对话响应慢、15 秒 720P 视频约 60 分钟一条，以及成片音频有回声。需补任务 ID、版本、队列/推理耗时与原音频，才能确认复现频率及责任环节。</p></div></div>
+      <div class="raw-feedback-panel"><div class="raw-feedback-heading"><div><span>VERBATIM SOURCE RECORDS</span><h4>用户反馈原字段全文</h4></div><p>逐字段从飞书表读取，保留原有措辞、换行、正向评价、问题和参数建议。四条记录的 23 件关联截图、成片与输入素材已获公开授权，逐件展示在对应记录下；手机号和微信号不展示。</p></div>
+        <details class="raw-feedback-record"><summary><span>30% 定向任务 · 杨伟科</span><small>飞书记录 rec28b5yzyvCyr · 点击展开原字段全文</small></summary><div class="raw-feedback-body">
+          <section><h5>定向测试任务</h5><pre>（原表未填写）</pre></section>
+          <section><h5>测试反馈情况</h5><pre>图片类
+任务1：人物立绘 无问题
+任务2：场景背景  无问题
+任务3：动作战斗 出鞘的刀的手握姿势有问题 生成的图出现了刀柄分开的迹象
+任务4：世界观设定图 出现了烬潮纪文字
+任务5：海报/封面 青蓝潮登位置比较突兀 没有和场景融合
+二、图生图（1 项）
+鞋面的颜色发生了变化
+三、关键帧 + 文生视频（4 项）
+视频任务 1—2：叙事与多人场景一致性
+任务 1：高架桥反转短剧——验证多段情节、角色关系和镜头衔接。 视频模糊无法用
+任务 2：办公室多人连续场景——验证人物身份、站位、道具和空间关系是否稳定。   视频模糊无法用
+
+视频任务 3—4：关键帧驱动的细腻表演
+任务 3：室内情绪对峙——使用女性人物关键帧，验证克制哭戏、呼吸、停顿、眼神和单镜头推进。效果不错
+任务 4：雪地等待与取暖动作——使用雪地人物关键帧，验证呼气、哈气、搓手、轮廓光和轻微手持跟随。效果不错
+</pre></section>
+          <section><h5>改进建议</h5><pre>图片细节场景部分融合需要改进 生成视频的时候 提示词短了以后感觉完全无法使用 还有一部分模型不能使用 点了生成才反馈不可用</pre></section>
+          <section><h5>复现频率</h5><pre>暂未复现</pre></section>
+          <section><h5>关联附件</h5><p class="feedback-media-intro">测试截图与成片 6 件；已获公开授权。下列文件逐件对应原飞书记录。</p>
+            <div class="feedback-media-grid"><figure><img loading="lazy" src="assets/feedback/dir-yang-01.png" alt="测试截图与成片 6 件 · 图片 1"><figcaption>图片 01 · <a href="assets/feedback/dir-yang-01.png" target="_blank" rel="noopener" title="assistant_e44af5cf-8641-45fa-a4a1-2bc1f330a657.png">打开原文件</a> · 0.9 MB<span>原文件名：assistant_e44af5cf-8641-45fa-a4a1-2bc1f330a657.png</span></figcaption></figure><figure><img loading="lazy" src="assets/feedback/dir-yang-02.png" alt="测试截图与成片 6 件 · 图片 2"><figcaption>图片 02 · <a href="assets/feedback/dir-yang-02.png" target="_blank" rel="noopener" title="assistant_775edc35-b59c-4889-bd24-88752e48b8f8.png">打开原文件</a> · 0.9 MB<span>原文件名：assistant_775edc35-b59c-4889-bd24-88752e48b8f8.png</span></figcaption></figure><figure><img loading="lazy" src="assets/feedback/dir-yang-03.png" alt="测试截图与成片 6 件 · 图片 3"><figcaption>图片 03 · <a href="assets/feedback/dir-yang-03.png" target="_blank" rel="noopener" title="assistant_f71d4808-387e-48f8-905d-be416c70a227.png">打开原文件</a> · 1.2 MB<span>原文件名：assistant_f71d4808-387e-48f8-905d-be416c70a227.png</span></figcaption></figure><figure><img loading="lazy" src="assets/feedback/dir-yang-04.png" alt="测试截图与成片 6 件 · 图片 4"><figcaption>图片 04 · <a href="assets/feedback/dir-yang-04.png" target="_blank" rel="noopener" title="assistant_49135a3a-c8e0-4f61-850e-4f8a77898596.png">打开原文件</a> · 0.7 MB<span>原文件名：assistant_49135a3a-c8e0-4f61-850e-4f8a77898596.png</span></figcaption></figure><figure><video controls preload="none" playsinline aria-label="测试截图与成片 6 件 · 视频 5"><source src="assets/feedback/dir-yang-05.mp4" type="video/mp4">浏览器不支持视频，请打开下方文件链接。</video><figcaption>视频 05 · <a href="assets/feedback/dir-yang-05.mp4" target="_blank" rel="noopener" title="assistant_5ef5f86c-d941-4880-9271-0eb7651b7bb9.mp4">打开原文件</a> · 52.6 MB<span>原文件名：assistant_5ef5f86c-d941-4880-9271-0eb7651b7bb9.mp4</span></figcaption></figure><figure><video controls preload="none" playsinline aria-label="测试截图与成片 6 件 · 视频 6"><source src="assets/feedback/dir-yang-06.mp4" type="video/mp4">浏览器不支持视频，请打开下方文件链接。</video><figcaption>视频 06 · <a href="assets/feedback/dir-yang-06.mp4" target="_blank" rel="noopener" title="assistant_c59ee0a0-8dd3-4589-a3ee-cbe8924fc1c2.mp4">打开原文件</a> · 8.4 MB<span>原文件名：assistant_c59ee0a0-8dd3-4589-a3ee-cbe8924fc1c2.mp4</span></figcaption></figure></div>
+          </section>
+        </div></details>
+        <details class="raw-feedback-record"><summary><span>30% 定向任务 · 倪海敬</span><small>飞书记录 rec28eVttIs55a · 点击展开原字段全文</small></summary><div class="raw-feedback-body">
+          <section><h5>定向测试任务</h5><pre>（原表未填写）</pre></section>
+          <section><h5>测试反馈情况</h5><pre>以下反馈的是存在的问题：
+1、文生图任务1：
+Z-image生图时， 朱红色短披风位于腰部没展示出来；
+booyu-image-turbo生图时，整体画质模糊，出现了2把刀的情况，整体效果比Z-image差。
+2、文生图任务4：世界观设定图
+Z-image不只五条能量线路，有很多条。
+3、视频任务1：叙事与多人场景一致性
+视频画面比较模糊，人脸看不清楚。
+4、视频任务2：没有参考图，无法测试。
+5、任务 3：室内情绪对峙
+    没有问题
+6、任务 4：雪地等待与取暖动作
+    没有问题
+</pre></section>
+          <section><h5>改进建议</h5><pre>整体情况如下：
+1、生图的工作流还可以，
+2、生视频的文生视频存在整体画面模糊、人脸崩坏、
+3、图生视频还可以
+4、未发现胡言乱语、乱说台词的情况。
+
+改进建议：
+1、图生视频需要参考三段式写提示词，多参考生视频也需要符合六段式提示词。
+2、优化工作流，在多参考生视频的工作流中增加节点“插值扩展sigma”，步数设置为2，起始sigma设置为0.90，结束sigma设置为0，连接在基本调度器之后，采样器之前。可以有效提升清晰度。</pre></section>
+          <section><h5>复现频率</h5><pre>每次都出现</pre></section>
+          <section><h5>关联附件</h5><p class="feedback-media-intro">测试截图 4 件；已获公开授权。下列文件逐件对应原飞书记录。</p>
+            <div class="feedback-media-grid"><figure><img loading="lazy" src="assets/feedback/dir-ni-01.png" alt="测试截图 4 件 · 图片 1"><figcaption>图片 01 · <a href="assets/feedback/dir-ni-01.png" target="_blank" rel="noopener" title="image.png">打开原文件</a> · 0.4 MB<span>原文件名：image.png</span></figcaption></figure><figure><img loading="lazy" src="assets/feedback/dir-ni-02.png" alt="测试截图 4 件 · 图片 2"><figcaption>图片 02 · <a href="assets/feedback/dir-ni-02.png" target="_blank" rel="noopener" title="image.png">打开原文件</a> · 0.3 MB<span>原文件名：image.png</span></figcaption></figure><figure><img loading="lazy" src="assets/feedback/dir-ni-03.png" alt="测试截图 4 件 · 图片 3"><figcaption>图片 03 · <a href="assets/feedback/dir-ni-03.png" target="_blank" rel="noopener" title="image.png">打开原文件</a> · 0.2 MB<span>原文件名：image.png</span></figcaption></figure><figure><img loading="lazy" src="assets/feedback/dir-ni-04.png" alt="测试截图 4 件 · 图片 4"><figcaption>图片 04 · <a href="assets/feedback/dir-ni-04.png" target="_blank" rel="noopener" title="image.png">打开原文件</a> · 2.7 MB<span>原文件名：image.png</span></figcaption></figure></div>
+          </section>
+        </div></details>
+        <details class="raw-feedback-record"><summary><span>70% 真实业务 · 杨伟科</span><small>飞书记录 rec28b5FoP3Bl7 · 点击展开原字段全文</small></summary><div class="raw-feedback-body">
+          <section><h5>真实业务测试类型</h5><pre>5. 海外艺人IP/APP电商广告</pre></section>
+          <section><h5>现有方案对比</h5><pre>目前使用gpt codex生成</pre></section>
+          <section><h5>输入文字描述</h5><pre>广告投流生图 会根据活动然后生成标题、活动主要风格等提示词 然后根据提示词来生成符合投流条件的图片
+提示词类似这种请帮我画一张信息流投放素材。画面主体：浅灰色渐变背景上，前景是1支商超唇釉（包装清晰可见），背景虚化展示多支不同色号的唇釉陈列，营造商超挑选感；右侧叠加半透明美团黄胶囊状权益卡，写“立减18元”。主标题写：『商超唇釉立减18元』，粗黑字体，“18元”用美团黄底高亮，位于画面中上部；副标题写：『领券下单更省』，黑色常规字体，紧贴主标题下方。风格：美团生活服务促销风，色彩清新，权益信息突出。比例：9:16。画面除标题和商品包装自身印刷信息外不要出现其他无关文字；不要画平台/商家角标logo（后期叠加），但包装商品不能是空白无字样机。 本品牌门面构图锚定（最高视觉优先，照品牌真实投放素材提炼）：整张按「促销商品/场景+主题色背景卡：背景用品牌主题色（橙/红），主视觉是商品（汉堡/烤鸭）或服务场景（搬家），大标题突出权益，显眼处放CTA按钮」这一种原型的构图/配色/装饰来搭，标题商品和价格权益钩子摆进这个原型里；不要退回通用浅色商详首图或另起一套版式。（原型配方里的具体文案/活动名/数字如「五一狂欢季」「60减30」只是版式示例，框/条里换成本张的标题或权益钩子、必须填上不能留空框，别照抄示例文案。） 券/优惠券/权益卡必须有实在内容（严禁空券）：券脸正中央要放一个**具体优惠**——优惠数字（满X减Y／立减X元／X折起，照本张标题或活动的真实利益点）或一句**具体福利词**（如「领券立减」「天天可领」「新客立享」）；**绝不能画成只有黄边框+顶部一行标题+底部一个按钮、中间一大块纯色空白的空券脸**。若这张实在没有具体优惠可放，就把券缩成一个小角标/小图钉别占大块面积，或干脆不画券、把版面留给商品与标题。 促销贴纸/角标风格（治丑）：券、领券标、优惠角标一律用**干净的扁平数字优惠券风**（圆角券／胶囊标／小价签，配品牌色，像手机 APP 里的电子券）；**严禁画红色火焰/火苗形状的贴纸、星芒爆炸贴、红白爆炸角标，也别画超市实体价签/塑料吊牌那种立体压纹标签**——这些又土又丑；角标小而克制、别占大面积，且必须有字（领券／立减／具体优惠），不要空贴纸。 本张投流转化骨架必须优先：服务结果骨架；先让用户抓到点击理由，再看品牌活动氛围。 第一眼目标：1 秒内让用户看到服务能带来的具体结果、内容入口或任务完成感。 注意力层级必须遵循：第一层=服务结果卡/内容卡/账单卡；第二层=使用场景或人群；第三层=品牌信任点或轻 CTA。 版式骨架必须遵循：服务结果卡是画面主角，场景和品牌只做可信背景；标题贴近结果卡，避免泛电商大促模板。 组件预算：整张图只允许 1 个主转化组件，最多 1 个轻量辅助场景组件；禁止红包、金币、礼盒、榜单、按钮、箭头、贴纸、光效同时出现；如果出现 CTA，就不要再加额外场景组件；如果出现权益卡，就不要再堆红包金币。 品牌和活动只做辅助气质：影响颜色、字幕风格、边缘光、少量贴片和节奏感；不能抢走主标题、商品/权益主角、价格/CTA 的第一视线。 美团视觉DNA必须进入画面：美团视觉DNA：美团黄、生活服务、外卖/到店/即时配送，画面应有生活场景和服务结果，不只是白底单品。不能只换文案和角标，整体平台气质也要变。 当前活动氛围DNA必须进入画面：权益活动DNA：用户第一眼要看到红包/券/补贴/价格差，但这些是后期广告图形层，不是实拍纸券或桌面价签。不要把大促/活动画成安静白灰商品照。 品牌/活动配色必须遵循：无字状态光效浅底色：白/浅灰/少量品牌红，红包和价格做重点，背景不再默认粉红青色渐变；美团识别色只做 10%-20% 点缀：用于描边/角标/小贴片/价格重点，不能覆盖品类主色；禁止整批都使用同一粉红+青色渐变底。。 品牌/活动视觉禁区：不要把美团画成普通美团商品主图，不要缺少外卖/到店/生活服务线索；不要把价格券做成真实桌面纸牌、塑料吊牌、小票或密集条款。 影调自由：明亮/暖光/暗调氛围都行，codex 打光强；但商品主体、包装正面、主标题、价格/权益锚点仍要清楚可见。 本张投放样式家族必须遵循：内容/服务结果卡：不画商品货架，改用服务卡、结果摘要、播放/学习/支付/AI 输出等卡片作为主视觉。 价格权益图层规则（最终强制）：价格/权益/红包/券默认是后期广告图形层，不是实拍道具；允许做扁平数字、半透明色块、胶囊、角标、字幕贴片、轻拟物卡面；禁止把价格做成真实纸牌、塑料吊牌、桌面价签、实拍小票，除非本张明确是凭证证明路线。 本张投放组件必须落地：结果卡组件：用摘要卡、播放卡、账单卡、课程卡或目的地套餐卡表达结果；不要画商品货架和通用红包堆。它是广告转化组件，不是普通装饰；组件中文字只能来自主副标题、价格/权益锚点或商品卖点短词，禁止新增密集小字。 本张允许且只允许 1 个轻量行动按钮：小胶囊 CTA：画面中下部或右中安全区放 1 个品牌色水平小胶囊，文案从「立即领取」「限时领取」「打开美团查看」「去美团看看」里选。按钮文案可用「立即领取」「限时领取」「打开美团查看」「去美团看看」，不要把副标题塞进按钮，不要做多个按钮。 本张标题样式必须遵循：生活服务标题：黑字为主，关键词用美团黄底或黄线强调；权益锤标题：价格/低至/红包字样最大，主标题和副标题围绕其水平排版。标题文字仍必须水平摆放并避开四角 logo 区。 商品和场景可以有真实投流素材的抓拍感，价格/权益/CTA 是后期图形层；除主副标题和商品包装自身印刷信息外不要出现任何无关可读小字。 标题底可用卡片/字幕贴片/直接描边，别每张都同一种。 手机屏幕不可读，不出现商品页、砍价页、好友头像、小按钮或小字 UI。 **最终强制约束（必须严格遵守，违反即废图）**：所有文字（主标题、副标题、价格大字、装饰文字、贴片文字）**所有文字必须水平摆放**（baseline 与画面底边完全平行 0 度），**禁止整行倾斜、整体旋转、上扬、下沉、动感扭曲、立体透视、弧形弯曲、放射状、阶梯错位、动线斜排**任何角度（哪怕 1 度都不行）；**承载文字的色块、贴片、胶囊、几何衬底也一律必须水平摆放**，不要做成斜角三角形/平行四边形/旋转矩形/弧形飘带。字像静态印刷贴在画面上，字底 baseline 与画面底边严格平行。 **同一元素只画一次（最终强制，违反即废图）**：标题/副标题/券/卡片/按钮/商品 每个元素在画面里只出现一次，**禁止重复、重影、半透明叠影、错位分身，或同一段文字/同一张券在旁边再叠一层偏移的虚化副本**；卡片和文字都是单层、边缘干净。 **logo 角必须留空（最终强制约束，违反即废图）**：画面四个角各**约 15% 宽 × 12% 高的小矩形区域**（左上 / 右上 / 左下 / 右下）**绝对禁止出现任何文字、标题、副标题、价格大字、装饰贴片、图标、色块**——这四个角任意一个都可能被后期叠加品牌 logo / 合规小字，必须保持视觉留空（背景虚化或纯色延伸即可）。主标题最顶端的 baseline **必须在画面高度 18% 或更下**（不要让标题贴画面顶端）；**横向上**：标题文字宽度不要从左侧 0% 一直撑到右侧 100%，要么靠右半画面（左侧 50% 留空给 logo 角），要么紧凑居中且**两端各留 18% 宽不进入文字**。副标题同理避开四角。
+
+
+
+</pre></section>
+          <section><h5>待优化点</h5><pre>图片小细节上的文字处理比较差 在细节元素上的汉字效果很差 会出现元素内的糊字 错字 非正常字</pre></section>
+          <section><h5>关联附件</h5><p class="feedback-media-intro">Siltok 输出文件 6 件；输入素材截图 0 件；已获公开授权。下列文件逐件对应原飞书记录。</p>
+            <div class="feedback-media-grid"><figure><img loading="lazy" src="assets/feedback/real-yang-01.png" alt="Siltok 输出文件 6 件；输入素材截图 0 件 · 图片 1"><figcaption>图片 01 · <a href="assets/feedback/real-yang-01.png" target="_blank" rel="noopener" title="assistant_3ff89c1b-21ac-4a01-95fa-376dc9d83976.png">打开原文件</a> · 0.9 MB<span>原文件名：assistant_3ff89c1b-21ac-4a01-95fa-376dc9d83976.png</span></figcaption></figure><figure><img loading="lazy" src="assets/feedback/real-yang-02.png" alt="Siltok 输出文件 6 件；输入素材截图 0 件 · 图片 2"><figcaption>图片 02 · <a href="assets/feedback/real-yang-02.png" target="_blank" rel="noopener" title="assistant_8682a89e-8be2-4ebd-845c-d497bccb70c0.png">打开原文件</a> · 0.7 MB<span>原文件名：assistant_8682a89e-8be2-4ebd-845c-d497bccb70c0.png</span></figcaption></figure><figure><img loading="lazy" src="assets/feedback/real-yang-03.png" alt="Siltok 输出文件 6 件；输入素材截图 0 件 · 图片 3"><figcaption>图片 03 · <a href="assets/feedback/real-yang-03.png" target="_blank" rel="noopener" title="assistant_3d7bdb68-5c85-4079-93fe-2d8cb9e350fb.png">打开原文件</a> · 0.8 MB<span>原文件名：assistant_3d7bdb68-5c85-4079-93fe-2d8cb9e350fb.png</span></figcaption></figure><figure><img loading="lazy" src="assets/feedback/real-yang-04.png" alt="Siltok 输出文件 6 件；输入素材截图 0 件 · 图片 4"><figcaption>图片 04 · <a href="assets/feedback/real-yang-04.png" target="_blank" rel="noopener" title="assistant_9ce0830d-9a05-4aa3-ba52-7c8cb0e77b03.png">打开原文件</a> · 0.7 MB<span>原文件名：assistant_9ce0830d-9a05-4aa3-ba52-7c8cb0e77b03.png</span></figcaption></figure><figure><img loading="lazy" src="assets/feedback/real-yang-05.png" alt="Siltok 输出文件 6 件；输入素材截图 0 件 · 图片 5"><figcaption>图片 05 · <a href="assets/feedback/real-yang-05.png" target="_blank" rel="noopener" title="assistant_909c3142-95d5-4461-bc79-b55a4f666cfe.png">打开原文件</a> · 0.8 MB<span>原文件名：assistant_909c3142-95d5-4461-bc79-b55a4f666cfe.png</span></figcaption></figure><figure><img loading="lazy" src="assets/feedback/real-yang-06.png" alt="Siltok 输出文件 6 件；输入素材截图 0 件 · 图片 6"><figcaption>图片 06 · <a href="assets/feedback/real-yang-06.png" target="_blank" rel="noopener" title="assistant_980f18d4-89c6-46db-af37-f7adb740924e.png">打开原文件</a> · 0.7 MB<span>原文件名：assistant_980f18d4-89c6-46db-af37-f7adb740924e.png</span></figcaption></figure></div>
+          </section>
+        </div></details>
+        <details class="raw-feedback-record"><summary><span>70% 真实业务 · 耿顺洋</span><small>飞书记录 rec28e2JNsjsoM · 点击展开原字段全文</small></summary><div class="raw-feedback-body">
+          <section><h5>真实业务测试类型</h5><pre>4. 二次元/漫剧/互动影游</pre></section>
+          <section><h5>现有方案对比</h5><pre>（原表未填写）</pre></section>
+          <section><h5>输入文字描述</h5><pre>（原表未填写）</pre></section>
+          <section><h5>待优化点</h5><pre>问题：
+1.生产图片时有些模型用不了，生成图片失败
+2.使用AI对话时，AI模型响应速度过慢
+3.生成视频时，不用满血模型，15s，720的视频，生成时间太慢，大概60分钟一条
+4.视频生成后，音频不清晰，有回音</pre></section>
+          <section><h5>关联附件</h5><p class="feedback-media-intro">Siltok 输出文件 5 件；输入素材截图 2 件；已获公开授权。下列文件逐件对应原飞书记录。</p>
+            <div class="feedback-media-grid"><figure><video controls preload="none" playsinline aria-label="Siltok 输出文件 5 件；输入素材截图 2 件 · 视频 1"><source src="assets/feedback/real-geng-out-01.mp4" type="video/mp4">浏览器不支持视频，请打开下方文件链接。</video><figcaption>视频 01 · <a href="assets/feedback/real-geng-out-01.mp4" target="_blank" rel="noopener" title="6d605a99acc46bc99491d4dfe6e86cfd.mp4">打开原文件</a> · 3.0 MB<span>原文件名：6d605a99acc46bc99491d4dfe6e86cfd.mp4</span></figcaption></figure><figure><video controls preload="none" playsinline aria-label="Siltok 输出文件 5 件；输入素材截图 2 件 · 视频 2"><source src="assets/feedback/real-geng-out-02.mp4" type="video/mp4">浏览器不支持视频，请打开下方文件链接。</video><figcaption>视频 02 · <a href="assets/feedback/real-geng-out-02.mp4" target="_blank" rel="noopener" title="6d682bd70d25dd57741cf021d2fa97fc.mp4">打开原文件</a> · 2.1 MB<span>原文件名：6d682bd70d25dd57741cf021d2fa97fc.mp4</span></figcaption></figure><figure><video controls preload="none" playsinline aria-label="Siltok 输出文件 5 件；输入素材截图 2 件 · 视频 3"><source src="assets/feedback/real-geng-out-03.mp4" type="video/mp4">浏览器不支持视频，请打开下方文件链接。</video><figcaption>视频 03 · <a href="assets/feedback/real-geng-out-03.mp4" target="_blank" rel="noopener" title="9e9573f4d9cb020b35fdc36c36334633.mp4">打开原文件</a> · 2.2 MB<span>原文件名：9e9573f4d9cb020b35fdc36c36334633.mp4</span></figcaption></figure><figure><video controls preload="none" playsinline aria-label="Siltok 输出文件 5 件；输入素材截图 2 件 · 视频 4"><source src="assets/feedback/real-geng-out-04.mp4" type="video/mp4">浏览器不支持视频，请打开下方文件链接。</video><figcaption>视频 04 · <a href="assets/feedback/real-geng-out-04.mp4" target="_blank" rel="noopener" title="af2604332f9a69d9433f8adba143ce20.mp4">打开原文件</a> · 3.0 MB<span>原文件名：af2604332f9a69d9433f8adba143ce20.mp4</span></figcaption></figure><figure><video controls preload="none" playsinline aria-label="Siltok 输出文件 5 件；输入素材截图 2 件 · 视频 5"><source src="assets/feedback/real-geng-out-05.mp4" type="video/mp4">浏览器不支持视频，请打开下方文件链接。</video><figcaption>视频 05 · <a href="assets/feedback/real-geng-out-05.mp4" target="_blank" rel="noopener" title="f282289a03f86069c09f2f66678091e1.mp4">打开原文件</a> · 3.0 MB<span>原文件名：f282289a03f86069c09f2f66678091e1.mp4</span></figcaption></figure><figure><img loading="lazy" src="assets/feedback/real-geng-input-01.png" alt="Siltok 输出文件 5 件；输入素材截图 2 件 · 图片 6"><figcaption>图片 06 · <a href="assets/feedback/real-geng-input-01.png" target="_blank" rel="noopener" title="6f659ec44b2f6e09a6ec457c699bef5f.png">打开原文件</a> · 0.1 MB<span>原文件名：6f659ec44b2f6e09a6ec457c699bef5f.png</span></figcaption></figure><figure><img loading="lazy" src="assets/feedback/real-geng-input-02.png" alt="Siltok 输出文件 5 件；输入素材截图 2 件 · 图片 7"><figcaption>图片 07 · <a href="assets/feedback/real-geng-input-02.png" target="_blank" rel="noopener" title="24dc1c9eee30b20f70babf92bf8b0380.png">打开原文件</a> · 0.0 MB<span>原文件名：24dc1c9eee30b20f70babf92bf8b0380.png</span></figcaption></figure></div>
+          </section>
+        </div></details>
+        <details class="raw-feedback-record"><summary><span>专业 CG 导演 · 用户提供的转述</span><small>非飞书原字段 · 点击展开完整转述</small></summary><div class="raw-feedback-body"><section><h5>用户在本次汇报中补充的全文</h5><pre>这是用户（专业CG 导演给的反馈）海外短剧的 10 秒钟视频：缺点：ai感太重，影调感没有，视听语言单一，优点：景深好，人物微表情可以，尤其有眨眼睛。缺点可以对照下我发的我做的影调感的。游戏视频不行，达不到预期，没有动画规律，并且人物手指崩了，可以参考我做的分镜那个比较下</pre></section></div></details>
+      </div>
         <div class="evidence-takeaway"><strong>转成研发任务</strong><p>质量问题保留输入、参数、成片和同题对照；文字问题逐字验收；模型不可用要在点击生成前提示；音频与耗时按设备、版本和任务类型复测。</p></div>
         <div class="source-line">原始记录：<a href="https://my.feishu.cn/base/TN5VbQoDeajznVsWsvjcJoAZngg?table=tblKwcn2BQaWAPlI&amp;view=vewaBJva8m" target="_blank" rel="noopener noreferrer">30% 定向任务表 ↗</a><a href="https://my.feishu.cn/base/TN5VbQoDeajznVsWsvjcJoAZngg?table=tbleBeeZW490q6bV&amp;view=vewf1QJG8d" target="_blank" rel="noopener noreferrer">70% 真实业务表 ↗</a></div>
       </article>
@@ -121,6 +206,68 @@
         <div class="evidence-setup"><div><strong>云端</strong><b>5090</b><span>共 4 台，本次分配 2 台；测试中有配置调整和新安装包。</span></div><div><strong>本地对照</strong><b>4060</b><span>笔记本显存不足 8G，自部署工作流与模型权重。</span></div><div><strong>5 秒任务</strong><b>10 vs 50 分钟</b><span>云端约 10 分钟、本地约 50 分钟，是文档中的用户报告。</span></div></div>
         <div class="evidence-table-wrap"><table class="evidence-table"><thead><tr><th>优先级</th><th>用户观察</th><th>对交付的影响 / 下一步</th></tr></thead><tbody><tr><td>P0</td><td>长任务和批量运行中频繁掉线</td><td>无法安心挂机；验证重连、状态持久化和断点续跑</td></tr><tr><td>P0</td><td>选 1080P，观感被描述为约 480P；光影不及本地样片</td><td>核验文件真实分辨率、码率、采样参数，并保留并排原片</td></tr><tr><td>P1</td><td>同指令下云端与本地 MiniMax 结果差别大</td><td>锁定模型权重、版本、seed、参数和工作流后复测</td></tr><tr><td>P1</td><td>速度快约 5 倍，但用户认为质量降低</td><td>按可用镜头总耗时和可交付率评价，不只看单次推理</td></tr><tr><td>P2</td><td>机器排期、交接文档难以复现</td><td>完善队列与 workflow / prompt / seed / 中间资产清单</td></tr></tbody></table></div>
         <div class="evidence-takeaway"><strong>证据边界</strong><p>“画质较差”是有效用户反馈，但“问题一定在云端模型或渲染管线”仍是待证实的归因；必须先排除版本、参数、压缩和后处理差异。《雨后微光》在原文中仍是推进中的目标，不写成已交付。</p></div>
+        <details class="raw-feedback-record cloud-full"><summary><span>云端 ComfyUI 公测反馈 · 文档文字全文</span><small>飞书文档 revision 15 · 图表/视频素材仍见原文</small></summary><div class="raw-feedback-body"><section><h5>按原文读取，未改写内容</h5><pre>&lt;title&gt;云端 ComfyUI × MiniMax 视频生成服务 · 公测反馈与产品建议&lt;/title&gt;
+
+&lt;callout emoji="💡"&gt;
+**核心结论：**本次公测以本地自部署环境为对照，覆盖模型能力验证（红船）、30 秒成片《雨后微光》与单晚 26 条批量任务。云端速度优势明显（约提速 5 倍），但输出质量与标称不符（选 1080p 观感约 480p）、云端与本地模型结果不一致、连接频繁掉线，三者共同影响成片交付与付费意愿。其中质量差距的关键证据：本地仅用 4060 笔记本（显存不足 8G）即可产出顶级光影与起雾效果，云端 5090 无论如何无法复现，说明问题出在云端模型与渲染管线，而非算力。建议优先解决连接稳定性与渲染质量对齐，再开放模型与工作流的用户自定义能力。
+&lt;/callout&gt;
+
+# 测试概况
+
+## 测试范围与方法
+
+- **测试环境：**云端 5090 机器（共 4 台，本次分配 2 台）；对照环境为本地自部署 ComfyUI＋MiniMax 权重，运行于 RTX 4060 笔记本（显存不足 8G）。
+- **测试内容：**
+
+  - **红船**：红色主题模型能力验证视频，本地已产出抖音版——光影、特效顶级，且带起雾氛围，观感很美，作为质量对照基准。
+  - **《雨后微光》**：30 秒成片，本次公测的目标交付物；当前按 AStar 模型、轻度/中度档位推进。
+  - **批量任务**：单晚连续运行 26 条，验证连续作业与批量稳定性。
+- **对照方法：**同一指令、同一模型，云端与本地各跑一遍，对比输出质量与耗时。
+- **测试周期：**3 天，因机器排期延长 1 天。
+- **测试过程备注：**测试期间技术对 6 号机（5090）调整配置并重新提供安装包。
+
+# 核心问题与优先级
+
+按「影响程度 × 复现频率」对问题分级：**P0 直接决定成片可用性，P1 决定能否替代本地方案，P2 影响规模化使用。**分布见下图，明细见下表。
+
+&lt;html5-block alt="公测问题优先级矩阵：横轴为复现频率，纵轴为影响程度，P0 优先修复、P1 重点改进、P2 体验优化" data-ref="html5_1"&gt;&lt;/html5-block&gt;
+
+## 问题明细
+
+| 优先级 | 问题 | 现象 | 影响与建议 |
+|-|-|-|-|
+| **P0** | 云端连接不稳定 | 批量或长任务运行中，云端链接频繁掉线。 | **影响：**无法安心挂机，批量任务需人工盯守。  &lt;br/&gt;**建议：**断线重连、任务状态持久化与断点续跑、心跳保活。 |
+| **P0** | 输出质量与标称不符 | 选择 1080p，实际观感约 480p；光影、特效明显低一个档次。  &lt;br/&gt;**关键对照：**本地 4060（显存不足 8G）能做出顶级光影＋起雾效果，云端 5090 无论如何无法复现——问题不在算力，而在云端模型与渲染管线。 | **影响：**成片不可用，直接削弱付费意愿。  &lt;br/&gt;**建议：**透明化真实输出规格（分辨率、码率、采样参数），排查云端渲染管线。 |
+| **P1** | 云端与本地模型结果不一致 | 同一指令下，云端 MiniMax H3 与本地 MiniMax 输出天差地别。 | **影响：**云端无法作为本地方案的替代。  &lt;br/&gt;**建议：**对齐模型版本与推理参数，开放模型版本选择。 |
+| **P1** | 速度与质量矛盾 | 5 秒视频：本地约 50 分钟，云端约 10 分钟；提速约 5 倍，但质量下降一档。  &lt;br/&gt;**反例补充：**今日早间的机甲战斗视频，为保证质量未启用加速，仍跑满 1 小时以上，结果依旧模糊——质量差距并非加速所致，指向云端模型与管线本身。 | **影响：**用户被迫在速度与质量间二选一。  &lt;br/&gt;**建议：**提供质量/速度档位；采纳本地已验证效果的四步加速方案。 |
+| **P2** | 产能与排期 | 仅 4 台机器，测试需排期。 | **影响：**规模化使用受限。  &lt;br/&gt;**建议：**任务队列与优先级管理，后续按需扩容。 |
+| **P2** | 交接文档不可复现 | 按文档无法恢复项目，需人工盯守。 | **影响：**迁移与协作成本高。  &lt;br/&gt;**建议：**文档标准化（workflow、prompt、seed、参数、中间资产清单）。 |
+
+# 产品打磨建议
+
+1. **用户自定义模型与工作流。**支持用户自带模型或工作流，提供 ComfyUI 定制化安装（可由 Agent 提问引导完成选型与安装），满足不同用户偏好的私有方法。
+2. **开放多模型选择。**AStar、SOL、Lunna、MiniMax 等按需切换，避免锁死在单一模型上。
+3. **质量规格透明。**明示真实分辨率、码率与采样参数，不做「标 1080p、出 480p」式的名实不符。
+4. **连接稳定性优先。**掉线是当前第一优先级，解决后批量与长任务体验会整体变好。
+5. **批量任务管理。**任务队列、进度展示、断点续跑与完成通知。
+6. **验收标准化。**引入「动态视力验收」等可复现验收流程，作为成片交付基准。
+7. **采纳四步加速方案。**本地已验证效果，可作为云端默认或可选的加速项。
+8. **由 Codex 接管云端尝试。**建议开放 Agent（Codex）接管云端任务的试点：由 Agent 自动调参与复现，争取达到本地同等质量。
+
+# 自动化与模型评测方向
+
+- **Agent 接管云端：**由 Codex、豆包等 Agent 自动完成安装、跑任务与验收，降低人工盯守成本。已提出具体尝试：由 Codex 接管云端任务，自动调参并复现，争取达到本地同等质量。
+- **定制化安装流程：**Agent 提问 → 用户选择 → 定制化安装 ComfyUI 与合适的模型。
+- **模型评测自动化：**统一指令＋多模型并行＋自动对比质量、耗时与成本。
+- **全自动候选方案：**若 Lunna 动态视力达标且成本低，可支撑「输入脚本 → 自动生成 → 自动验收 → 出片」的全自动流水线。
+- **多 Agent 协作已验证：**GPT 产出交接文档 → 豆包/Codex 按指令执行 → GPT 验收。可在云端复用到「任务调度 → 执行 → 验收」闭环。
+
+# 后续协作建议
+
+- **复现素材已备好：**红船对照样片、机甲战斗长任务用例与复现指令，均可提供给技术团队复跑。
+- **《雨后微光》进度：**成片由我侧用豆包继续推进，完成后补充云端对照结果。
+- **建议在明天用户反馈会上对齐：**P0 两项的修复排期、真实输出规格文档、模型版本选择内测。
+- **待补充：**【预留位：还有一条建议整理中，稍后补充】。</pre></section></div></details>
         <div class="source-line">原始文档：<a href="https://feishu.doubao.com/docx/UbFndrzMmoR2swxJA6scBxBlnUc" target="_blank" rel="noopener noreferrer">云端 ComfyUI 公测反馈 ↗</a></div>
       </article>
 
