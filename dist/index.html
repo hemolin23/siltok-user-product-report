@@ -11,7 +11,7 @@
   <div class="reading-progress" aria-hidden="true"><span id="readingBar"></span></div>
   <header class="topbar">
     <a class="brand" href="#top" aria-label="返回汇报首页"><span class="brand-mark">S↗</span><span><strong>SILTOK</strong><small>FIELD REPORT · 2026.09.23</small></span></a>
-    <nav aria-label="汇报目录"><a href="#operations">运营漏斗</a><a href="#feedback">案例反馈</a><a href="#judgment">产品判断</a><a href="#capability">功能与性能</a><a href="#unknowns">待明确事项</a><a href="#outcomes">工作成果</a><a href="./sources.html">资料正文</a><a href="#handover">新人上手</a></nav>
+    <nav aria-label="汇报目录"><a href="#operations">运营漏斗</a><a href="#feedback">案例反馈</a><a href="#judgment">产品判断</a><a href="#capability">功能与性能</a><a href="#unknowns">待明确事项</a><a href="#outcomes">工作成果</a><a href="#evidence">资料正文</a><a href="#handover">新人上手</a></nav>
     <button class="print-button" type="button" onclick="window.print()">打印 / PDF</button>
   </header>
   <main id="top">
@@ -62,7 +62,7 @@
       <div class="feedback-matrix"><article><div><span>BUG / RELIABILITY</span><h3>确定性故障</h3></div><p>断连、模型不可用后置提示、任务失败、长任务无法恢复、批量运行缺少持久化。</p><b>优先级：P0，先保证任务不丢。</b></article><article><div><span>QUALITY</span><h3>结果质量</h3></div><p>人脸模糊、肢体结构、元素融合、颜色漂移、小字错误、音频回声、1080P 名不副实。</p><b>优先级：P0，建立真实输出验收。</b></article><article><div><span>PERFORMANCE</span><h3>速度与吞吐</h3></div><p>5070 长尾明显、15 秒 720P 可达 60 分钟；单机多人场景会排队。</p><b>优先级：P1，按任务公布 P50 / P90。</b></article><article><div><span>FEATURE</span><h3>功能建议</h3></div><p>官方 API、批量队列、进度通知、资产库、项目管理、参考图角色、自动拼接和自定义工作流。</p><b>优先级：P1/P2，按首发场景收敛。</b></article></div>
       <div class="quality-analysis"><div><span>WHY SO FEW</span><h3>为什么高质量反馈不多？</h3></div><ol><li><b>样本没有走到真实任务</b><span>多数用户停在微信、协议或首次测试之前。</span></li><li><b>反馈成本高</b><span>测试、复现、截图、记录参数和写建议都需要额外时间。</span></li><li><b>产品问题过早暴露</b><span>断连、排队和环境摩擦把反馈挤压成“能不能跑”，难以进入专业质量讨论。</span></li><li><b>采集工具分散</b><span>表单、聊天、会议、共享文档和测试表之间缺少任务 ID 关联。</span></li><li><b>任务过宽</b><span>让用户自由探索容易产生描述性意见，不容易形成可验收问题。</span></li></ol></div>
       <div class="evidence-rule"><h3>反馈进入研发的最低标准</h3><ol><li><b>可追溯</b><span>用户、任务 ID、成片或原始记录</span></li><li><b>有影响</b><span>返工、时间、成本或交付后果</span></li><li><b>可复现</b><span>设备、版本、输入、参数与日志</span></li><li><b>可验收</b><span>修复后的量化通过标准</span></li></ol></div>
-      <div class="source-line dark-source">站内阅读：<a href="./feedback-detail.html">查看用户反馈详情 ↗</a><a href="./cloud-test.html">查看云端公测案例 ↗</a><a href="./sources.html">全部资料与访问状态 ↗</a></div>
+      <div class="source-line dark-source">继续阅读：<a href="#evidence-feedback">用户反馈原始内容 ↓</a><a href="#evidence-cloud">云端公测详情 ↓</a><a href="#evidence">全部资料正文 ↓</a></div>
     </section>
 
     <section class="report-section" id="judgment">
@@ -100,21 +100,57 @@
         <article><time>09.21</time><div><h4>按真实 Studio V1.0 校准界面</h4><p>主机管理、模型商店、灵感广场、AI 对话和任务队列与真实软件对齐；补齐设置、桌宠及文字 / 图片 / 视频生成模式。</p></div><a href="https://github.com/hemolin23/siltok-ai-station/commit/21b6904" target="_blank" rel="noopener noreferrer">查看版本 ↗</a></article>
         <article><time>09.22</time><div><h4>修复样片在手机和其他浏览器无法播放</h4><p>点击播放、移动端控制、iPhone 全屏兼容与 MP4 快速起播，解决“看得到封面却播不了”的问题。</p></div><a href="https://github.com/hemolin23/siltok-ai-station/commit/79dd85f" target="_blank" rel="noopener noreferrer">查看版本 ↗</a></article>
       </div></div>
-      <div class="research-links"><h3>其他可复用成果</h3><a href="./shot-library.html">5S / 10S / 15S 镜头库网页 ↗</a><a href="./test-tasks.html">三项推荐体验任务网页 ↗</a><a href="./feedback-detail.html">用户反馈内容页 ↗</a><a href="./cloud-test.html">云端公测内容页 ↗</a><a href="codex://threads/01a0b3c5-79f0-7183-825e-0bb3fccd9dde">AI 电影镜头与分镜测试任务 ↗</a><a href="codex://threads/01a09e9a-07a3-7d62-b679-0d9b24fe4acd">真人短剧制作任务 ↗</a><a href="codex://threads/01a0ad64-a962-7553-9d08-9ddb6ee4abe0">竞品体验与测试样片任务 ↗</a><a href="codex://threads/01a066ee-bc10-79b3-993b-f221e7ff73b5">创作者邀请页迭代任务 ↗</a><a href="codex://threads/01a0c2d1-23ba-77a0-ab73-ca5884d169d3">产品介绍页改版过程 ↗</a><a href="codex://threads/01a05c63-258a-7251-b175-69fa52f3fc2d">操作手册迭代过程 ↗</a><a href="codex://threads/01a0c1b6-b2ec-7642-a774-4559ccc2c8db">新人培训材料制作过程 ↗</a><a href="codex://threads/01a0bcee-8787-71e2-a0c6-c4bcb75ba39f">体验预约入口的产品判断 ↗</a></div>
+      <div class="research-links"><h3>其他可复用成果</h3><a href="#evidence-shots">5S / 10S / 15S 镜头库 ↓</a><a href="#evidence-tasks">三项推荐体验任务 ↓</a><a href="#evidence-feedback">用户反馈内容 ↓</a><a href="#evidence-cloud">云端公测内容 ↓</a><a href="codex://threads/01a0b3c5-79f0-7183-825e-0bb3fccd9dde">AI 电影镜头与分镜测试任务 ↗</a><a href="codex://threads/01a09e9a-07a3-7d62-b679-0d9b24fe4acd">真人短剧制作任务 ↗</a><a href="codex://threads/01a0ad64-a962-7553-9d08-9ddb6ee4abe0">竞品体验与测试样片任务 ↗</a><a href="codex://threads/01a066ee-bc10-79b3-993b-f221e7ff73b5">创作者邀请页迭代任务 ↗</a><a href="codex://threads/01a0c2d1-23ba-77a0-ab73-ca5884d169d3">产品介绍页改版过程 ↗</a><a href="codex://threads/01a05c63-258a-7251-b175-69fa52f3fc2d">操作手册迭代过程 ↗</a><a href="codex://threads/01a0c1b6-b2ec-7642-a774-4559ccc2c8db">新人培训材料制作过程 ↗</a><a href="codex://threads/01a0bcee-8787-71e2-a0c6-c4bcb75ba39f">体验预约入口的产品判断 ↗</a></div>
       <p class="access-note">访问提示：部分 Sites 工作台、飞书表格和 Codex 任务需要相应账号权限。这里保留原始入口供团队内部核对，不把无法读取的内容写成已核实事实。</p>
     </section>
 
+    <section class="report-section evidence-section" id="evidence">
+      <header class="section-heading"><span class="section-no">07</span><div><p>READ THE EVIDENCE</p><h2>资料正文与案例拆解</h2></div><p>将已核验的飞书文档和数据表直接放进本页。读者无需离开汇报，即可理解用户说了什么、怎么测试、哪些结论仍待验证。</p></header>
+      <div class="evidence-notice"><strong>公开版说明</strong><p>两张反馈表各有 2 条记录，不能当作 4 位唯一用户；镜头库 15 行中 12 行有有效内容。这里不公开姓名、手机号、微信号或未授权附件。用户的主观画质描述与技术根因分开呈现。</p></div>
+      <div class="evidence-jump"><a href="#evidence-feedback"><span>01</span>用户测试反馈</a><a href="#evidence-cloud"><span>02</span>云端公测</a><a href="#evidence-tasks"><span>03</span>推荐体验任务</a><a href="#evidence-shots"><span>04</span>镜头性能库</a></div>
+
+      <article class="evidence-block" id="evidence-feedback">
+        <div class="evidence-heading"><div><span>01 / USER FEEDBACK</span><h3>定向测试与真实业务反馈</h3></div><p>原表共 4 条反馈记录：2 条定向任务、2 条真实业务。以下保留具体观察与可执行问题，不把个别案例冒充总体发生率。</p></div>
+        <div class="evidence-cards"><div><b>定向任务 · 记录 1</b><p>人物立绘和场景背景未报告问题；动作图中持刀手势、刀柄连接异常；世界观图出现多余中文；海报元素融合突兀；图生图鞋色漂移。高架桥和多人办公室视频模糊不可用，室内情绪与雪地动作两项评价较好。部分模型直到点击生成后才告知不可用。</p></div><div><b>定向任务 · 记录 2</b><p>Z-image 出现披风缺失、能量线路数量不符；booyu-image-turbo 有模糊和多刀问题。文生视频脸部不清，图生视频相对可用；未观察到乱说台词。反馈者建议分段提示词，并试验“插值扩展 sigma”节点，但参数方案尚需研发复测。</p></div><div><b>真实业务 · 广告投流</b><p>用户用 Codex 生成活动文案和投放图片提示词，对 9:16 画面、权益卡、单一转化组件、品牌色与 Logo 安全区都有明确要求。实际卡点是图片细节里的中文糊字、错字和异常字；此处文字正确性直接影响素材投放。</p></div><div><b>真实业务 · 漫剧 / 互动内容</b><p>报告部分图片模型生成失败、AI 对话响应慢、15 秒 720P 视频约 60 分钟一条，以及成片音频有回声。需补任务 ID、版本、队列/推理耗时与原音频，才能确认复现频率及责任环节。</p></div></div>
+        <div class="evidence-takeaway"><strong>转成研发任务</strong><p>质量问题保留输入、参数、成片和同题对照；文字问题逐字验收；模型不可用要在点击生成前提示；音频与耗时按设备、版本和任务类型复测。</p></div>
+        <div class="source-line">原始记录：<a href="https://my.feishu.cn/base/TN5VbQoDeajznVsWsvjcJoAZngg?table=tblKwcn2BQaWAPlI&amp;view=vewaBJva8m" target="_blank" rel="noopener noreferrer">30% 定向任务表 ↗</a><a href="https://my.feishu.cn/base/TN5VbQoDeajznVsWsvjcJoAZngg?table=tbleBeeZW490q6bV&amp;view=vewf1QJG8d" target="_blank" rel="noopener noreferrer">70% 真实业务表 ↗</a></div>
+      </article>
+
+      <article class="evidence-block" id="evidence-cloud">
+        <div class="evidence-heading"><div><span>02 / CLOUD BETA</span><h3>云端 ComfyUI：快了，却仍未达到替代标准</h3></div><p>公测文档以本地 ComfyUI + MiniMax 为对照，覆盖“红船”样片、30 秒《雨后微光》目标和单晚 26 条批量任务。</p></div>
+        <div class="evidence-setup"><div><strong>云端</strong><b>5090</b><span>共 4 台，本次分配 2 台；测试中有配置调整和新安装包。</span></div><div><strong>本地对照</strong><b>4060</b><span>笔记本显存不足 8G，自部署工作流与模型权重。</span></div><div><strong>5 秒任务</strong><b>10 vs 50 分钟</b><span>云端约 10 分钟、本地约 50 分钟，是文档中的用户报告。</span></div></div>
+        <div class="evidence-table-wrap"><table class="evidence-table"><thead><tr><th>优先级</th><th>用户观察</th><th>对交付的影响 / 下一步</th></tr></thead><tbody><tr><td>P0</td><td>长任务和批量运行中频繁掉线</td><td>无法安心挂机；验证重连、状态持久化和断点续跑</td></tr><tr><td>P0</td><td>选 1080P，观感被描述为约 480P；光影不及本地样片</td><td>核验文件真实分辨率、码率、采样参数，并保留并排原片</td></tr><tr><td>P1</td><td>同指令下云端与本地 MiniMax 结果差别大</td><td>锁定模型权重、版本、seed、参数和工作流后复测</td></tr><tr><td>P1</td><td>速度快约 5 倍，但用户认为质量降低</td><td>按可用镜头总耗时和可交付率评价，不只看单次推理</td></tr><tr><td>P2</td><td>机器排期、交接文档难以复现</td><td>完善队列与 workflow / prompt / seed / 中间资产清单</td></tr></tbody></table></div>
+        <div class="evidence-takeaway"><strong>证据边界</strong><p>“画质较差”是有效用户反馈，但“问题一定在云端模型或渲染管线”仍是待证实的归因；必须先排除版本、参数、压缩和后处理差异。《雨后微光》在原文中仍是推进中的目标，不写成已交付。</p></div>
+        <div class="source-line">原始文档：<a href="https://feishu.doubao.com/docx/UbFndrzMmoR2swxJA6scBxBlnUc" target="_blank" rel="noopener noreferrer">云端 ComfyUI 公测反馈 ↗</a></div>
+      </article>
+
+      <article class="evidence-block" id="evidence-tasks">
+        <div class="evidence-heading"><div><span>03 / ONBOARDING TASKS</span><h3>三项推荐体验任务，照着做即可执行</h3></div><p>这不是随便“玩一玩”：每项都限定输入、模型、时长和验收点，让反馈能够复现。</p></div>
+        <div class="task-cards"><div><span>任务 01 · 已有成片</span><h4>产品图 → 广告镜头</h4><ol><li>上传一张清晰产品图，选择“图片生成视频”。</li><li>设 16:9、768P、5 秒、1 条；只做缓慢推进与轻微环绕。</li><li>检查椅子外形、材质、结构和运镜，避免新增人物、零件与文字。</li></ol><p>5090、20-step 的文档记录为 229 秒（约 3 分 49 秒）；任务编号 <code>5090-Speed-TC-022</code>。</p></div><div><span>任务 02 · 已有成片</span><h4>古装短剧桥接镜头</h4><ol><li>上传角色图，可再补算命铺环境图；选择“全能参考”。</li><li>设 16:9、768P、5 秒、1 条；只拍手压住纸张的单一动作。</li><li>检查身份、衣袖、桌面道具和手部结构连续性。</li></ol><p>CAA-5S 在 5090 6-step 为 2 分 30 秒、8-step 为 2 分 56 秒。实际 endpoint 是 Ref2VA 还是 FL2VA，需用日志核对。</p></div><div><span>任务 03 · 待补测</span><h4>一句话生成产品海报</h4><ol><li>竖版 2:3、1664×2496，生成便携咖啡机主视觉。</li><li>同一 Prompt 连续跑 3 个 Seed，挑选结构、中文与材质达标的图。</li><li>固定入选 Seed 再跑一次，并补最终图与实测时间。</li></ol><p>现有资料没有达标的内部成片。补测前只能标为“待验证”，不能作为稳定推荐案例。</p></div></div>
+        <div class="evidence-takeaway"><strong>新人交接标准</strong><p>每次留下用户场景、输入素材、模型版本、参数、任务 ID、排队与运行耗时、输出、首次可用率，以及用户原话和团队判断。</p></div>
+        <div class="source-line">原始文档：<a href="https://my.feishu.cn/docx/PKJ3dIqgfoSDqfxe8dKcRmV3nhh" target="_blank" rel="noopener noreferrer">Siltok 产品手册 · 3 个推荐体验任务 ↗</a></div>
+      </article>
+
+      <article class="evidence-block" id="evidence-shots">
+        <div class="evidence-heading"><div><span>04 / SHOT BENCHMARK</span><h3>5S / 10S / 15S 镜头耗时库</h3></div><p>飞书表有 15 行，12 行具备镜头编号与性能记录。下表为 5090 单次端到端耗时，不是 P50/P90 或服务承诺。</p></div>
+        <div class="evidence-table-wrap"><table class="evidence-table"><thead><tr><th>镜头</th><th>项目 / 内容</th><th>目标时长</th><th>6-step</th><th>8-step</th><th>20-step</th><th>原片匹配</th></tr></thead><tbody><tr><td>LUC-5S</td><td>路西法 · 节点 19</td><td>5S</td><td>2:30</td><td>2:56</td><td>5:26</td><td>近似：6.08 秒</td></tr><tr><td>LUC-10S</td><td>路西法 · 节点 6</td><td>10S</td><td>4:18</td><td>5:22</td><td>11:26</td><td>一致</td></tr><tr><td>LUC-15S</td><td>路西法 · 节点 20</td><td>15S</td><td>7:00</td><td>8:52</td><td>19:56</td><td>一致</td></tr><tr><td>EGY-5S</td><td>古埃及神话 · 节点 1</td><td>5S</td><td>2:31</td><td>2:57</td><td>5:30</td><td>一致</td></tr><tr><td>EGY-10S</td><td>古埃及神话 · 节点 6</td><td>10S</td><td>4:21</td><td>5:26</td><td>11:37</td><td>一致</td></tr><tr><td>EGY-15S</td><td>古埃及神话 · 节点 5</td><td>15S</td><td>7:06</td><td>9:01</td><td>20:14</td><td>一致</td></tr><tr><td>BAI-5S</td><td>《摆》· 节点 5</td><td>5S</td><td>2:31</td><td>2:57</td><td>5:32</td><td>一致</td></tr><tr><td>BAI-10S</td><td>《摆》· 节点 9</td><td>10S</td><td>4:22</td><td>5:22</td><td>11:21</td><td>一致</td></tr><tr><td>BAI-15S</td><td>《摆》· 节点 9</td><td>15S</td><td>7:06</td><td>8:59</td><td>20:11</td><td>一致</td></tr><tr><td>CAA-5S</td><td>《长安异闻录》· 补镜头</td><td>5S</td><td>2:30</td><td>2:56</td><td>5:28</td><td>近似：4.06 秒</td></tr><tr><td>CAA-10S</td><td>《长安异闻录》· 出门踩点</td><td>10S</td><td>4:22</td><td>5:27</td><td>11:38</td><td>近似：14.05 秒</td></tr><tr><td>CAA-15S</td><td>《长安异闻录》· 纳妾</td><td>15S</td><td>7:05</td><td>8:58</td><td>20:08</td><td>一致</td></tr></tbody></table></div>
+        <div class="evidence-takeaway"><strong>如何解读</strong><p>5 秒镜头 6-step 约 2 分半，20-step 约 5 分半；15 秒则约 7 分钟与 20 分钟。选择默认档位还必须对照画质、可用率和返工次数，不能只按速度判断。</p></div>
+        <div class="source-line">原始数据：<a href="https://my.feishu.cn/base/ACbSbBVdYalJefsi8xtciVqPnjd" target="_blank" rel="noopener noreferrer">飞书 5S / 10S / 15S 镜头库 ↗</a></div>
+      </article>
+      <div class="evidence-access"><b>仍待补充的资料</b><p>新增深度表当前账号无权限；另一份飞书视图分享链接无法解析底层 Base；会议纪要和 ColorOS 笔记未取得全文。主报告已有的摘录保留，但不会将其写成已核验的全文。原链接仍可从<a href="./sources.html">资料目录</a>查看。</p></div>
+    </section>
+
     <section class="report-section handover-section" id="handover">
-      <header class="section-heading"><span class="section-no">07</span><div><p>NEW TEAM MEMBER GUIDE</p><h2>新人照着做的完整步骤</h2></div><p>每一步说明“做什么、在哪里做、完成后留下什么”，帮助新人接手而不是从零猜流程。</p></header>
+      <header class="section-heading"><span class="section-no">08</span><div><p>NEW TEAM MEMBER GUIDE</p><h2>新人照着做的完整步骤</h2></div><p>每一步说明“做什么、在哪里做、完成后留下什么”，帮助新人接手而不是从零猜流程。</p></header>
       <div class="sop-intro"><strong>先记住这条主线</strong><p>找对人 → 确认真实任务 → 邀请轻量体验 → 安排设备与协议 → 跑同一任务 → 记录结果与问题 → 复测并决定下一步。</p></div>
       <div class="sop-list">
         <article><span>STEP 01</span><div><h3>准备候选名单</h3><p>从已有候选池看账号内容和公开资料，记录平台、稳定账号 ID、创作方向、近期作品、公开联系方式及来源链接。先按短剧、电商、ComfyUI、专业导演等场景分组，同一微信号只保留一条主记录。</p><b>完成标准：能说清“为什么找这个人”，并能点回原始作品。</b></div><a href="https://siltok-signal.qingyu-lu-ai.chatgpt.site" target="_blank" rel="noopener noreferrer">建联工作台 ↗</a></article>
         <article><span>STEP 02</span><div><h3>写第一条消息并建联</h3><p>首条只说身份、对方的具体作品，以及一个与其工作相关的问题。按“已申请、已通过、已回复、待跟进、无意向”记录状态；不要把产品介绍、协议和长问卷塞进同一条消息。</p><b>完成标准：对方知道你是谁，也知道回复哪一个问题。</b></div><a href="codex://threads/01a0ad2a-a406-7601-b521-a82667c2eb71">沟通话术复盘 ↗</a></article>
         <article><span>STEP 03</span><div><h3>确认是否真的适合测试</h3><p>先问对方现在使用什么工具、最近做过哪个真实项目、最卡哪一步、是否愿意投入 15–30 分钟。云端已满足需求的人可以保持联系，不必强推端侧；有明确任务的人再进入测试。</p><b>完成标准：拿到一项具体任务和当前方案，而不只是“对 AI 感兴趣”。</b></div><a href="https://siltok-creator-lab.qingyu-lu-ai.chatgpt.site" target="_blank" rel="noopener noreferrer">共创计划 ↗</a></article>
         <article><span>STEP 04</span><div><h3>安排体验与资料</h3><p>确认对方身份、设备空档、适用的 3 天自由测试方式和所需协议。给出一个最小任务，再发送安装、连接和求助步骤。运营应在台账写明用户状态、设备、预约时间与负责人。</p><b>完成标准：用户知道何时测、怎么进、遇到问题找谁。</b></div><a href="https://hemolin23.github.io/siltok-quickstart-guide/" target="_blank" rel="noopener noreferrer">快速上手指南 ↗</a></article>
-        <article><span>STEP 05</span><div><h3>按任务卡执行并记录</h3><p>先保存用户原方案和输入，再固定模型、参数、分辨率、时长与成功标准；记录任务 ID、排队、运行、失败重试和输出文件。对导演类用户，要额外保留参考分镜与影调对照片。</p><b>完成标准：另一位同事拿到记录后能复跑同一任务。</b></div><a href="./test-tasks.html">推荐测试任务 ↗</a></article>
-        <article><span>STEP 06</span><div><h3>收集反馈并转成问题</h3><p>让用户先讲哪里不能交付、哪一步费时，再问哪一点意外地好。原话、运营归纳和研发判断分开写；Bug 补日志与复现步骤，质量问题补原片和对照，建议写明使用场景。</p><b>完成标准：问题有影响、证据、负责人和可复测条件。</b></div><a href="./feedback-detail.html">查看反馈案例 ↗</a></article>
-        <article><span>STEP 07</span><div><h3>复测、回访与产品汇报</h3><p>修复后请原用户使用相同素材复测；比较首次可用率、可用镜头总耗时和是否继续使用。每周把高频问题、个别异常与尚无证据的想法分开汇总给产品和技术。</p><b>完成标准：每个案例都有“原问题—采取动作—得到结果—下一步决定”。</b></div><a href="./sources.html">资料正文总览 ↗</a></article>
+        <article><span>STEP 05</span><div><h3>按任务卡执行并记录</h3><p>先保存用户原方案和输入，再固定模型、参数、分辨率、时长与成功标准；记录任务 ID、排队、运行、失败重试和输出文件。对导演类用户，要额外保留参考分镜与影调对照片。</p><b>完成标准：另一位同事拿到记录后能复跑同一任务。</b></div><a href="#evidence-tasks">推荐测试任务 ↓</a></article>
+        <article><span>STEP 06</span><div><h3>收集反馈并转成问题</h3><p>让用户先讲哪里不能交付、哪一步费时，再问哪一点意外地好。原话、运营归纳和研发判断分开写；Bug 补日志与复现步骤，质量问题补原片和对照，建议写明使用场景。</p><b>完成标准：问题有影响、证据、负责人和可复测条件。</b></div><a href="#evidence-feedback">查看反馈案例 ↓</a></article>
+        <article><span>STEP 07</span><div><h3>复测、回访与产品汇报</h3><p>修复后请原用户使用相同素材复测；比较首次可用率、可用镜头总耗时和是否继续使用。每周把高频问题、个别异常与尚无证据的想法分开汇总给产品和技术。</p><b>完成标准：每个案例都有“原问题—采取动作—得到结果—下一步决定”。</b></div><a href="#evidence">资料正文总览 ↑</a></article>
       </div>
       <div class="sop-close"><h3>新人最容易踩的三个坑</h3><ol><li>把“通过微信”写成“愿意测试”，把“愿意测试”写成“完成测试”。</li><li>只记用户说“模糊、慢、不好用”，没有保存任务 ID、参数、原片与业务影响。</li><li>把单次演示速度、概念效果或未规划功能写成产品承诺。</li></ol></div>
     </section>
