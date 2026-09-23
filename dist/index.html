@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Siltok AI Station 用户运营、用户反馈、产品判断与技术议题联合汇报。" />
+  <title>Siltok 用户运营与产品洞察汇报</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="reading-progress" aria-hidden="true"><span id="readingBar"></span></div>
+
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="返回汇报首页">
+      <span class="brand-mark">S↗</span>
+      <span><strong>SILTOK</strong><small>FIELD REPORT · 2026</small></span>
+    </a>
+    <nav aria-label="汇报目录">
+      <a href="#operations">运营工作</a>
+      <a href="#feedback">用户反馈</a>
+      <a href="#judgment">观点判断</a>
+      <a href="#capability">功能与性能</a>
+      <a href="#unknowns">待明确事项</a>
+    </nav>
+    <button class="print-button" type="button" onclick="window.print()">打印 / PDF</button>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">USER OPERATIONS × PRODUCT × ENGINEERING</p>
+        <h1>从用户线索，<br />走到<span>产品决策。</span></h1>
+        <p class="hero-lead">本阶段的工作重点，是把用户发现、真实反馈和性能数据转化为产品范围、技术优先级与可验证的体验标准。</p>
+        <div class="hero-meta"><span>汇报日期 · 2026.09.23</span><span>内部评审材料</span></div>
+      </div>
+      <div class="hero-map" aria-label="工作链路">
+        <div class="map-track">
+          <article><span>01</span><strong>发现</strong><small>公开内容与用户线索</small></article>
+          <article><span>02</span><strong>验证</strong><small>评论、访谈与真实任务</small></article>
+          <article><span>03</span><strong>测试</strong><small>质量、性能与稳定性</small></article>
+          <article><span>04</span><strong>决策</strong><small>功能边界与优先级</small></article>
+        </div>
+        <div class="hero-statement"><span>当前核心任务</span><p>确认哪些用户任务可以稳定交付，以及用什么标准证明。</p></div>
+      </div>
+    </section>
+
+    <section class="metric-band" aria-label="阶段数据">
+      <div><strong>5,903</strong><span>条内容研究底座</span></div>
+      <div><strong>2,910</strong><span>个稳定 ID 候选</span></div>
+      <div><strong>447</strong><span>条首轮评论</span></div>
+      <div><strong>226</strong><span>条痛点证据</span></div>
+      <div><strong>702</strong><span>条独立性能记录</span></div>
+    </section>
+
+    <section class="report-section" id="operations">
+      <header class="section-heading">
+        <span class="section-no">01</span>
+        <div><p>USER OPERATIONS</p><h2>用户运营工作任务总结</h2></div>
+        <p>建立从“发现用户”到“形成可执行产品问题”的链路。</p>
+      </header>
+      <div class="image-copy-layout">
+        <figure class="section-image"><img src="./assets/01-research.png" alt="研究卡片与用户信号汇聚成网络的概念插画" /><figcaption>线索收集 → 稳定身份 → 证据分级 → 真实任务</figcaption></figure>
+        <div class="work-streams">
+          <article><span>01</span><div><h3>用户研究</h3><p>围绕 AI 视频、ComfyUI、本地部署、短剧和电商场景，建立内容、账号与评论证据池。</p><small>产出：用户分层、痛点分类、优先候选</small></div></article>
+          <article><span>02</span><div><h3>招募与建联</h3><p>设计个性化首联、公开联系方式筛选、状态跟进和停止触达规则。</p><small>产出：8 人精筛、公开联系方式池、Siltok Signal</small></div></article>
+          <article><span>03</span><div><h3>测试组织</h3><p>建立预访谈、原方案基线、任务卡、体验事件、负面反馈和结束访谈。</p><small>产出：15 张关联表的运营工作台</small></div></article>
+          <article><span>04</span><div><h3>产品支持</h3><p>将用户语言整理为产品范围、技术问题、验收条件和对外表达边界。</p><small>产出：测试 SOP、合作资料、手册与功能建议</small></div></article>
+        </div>
+      </div>
+      <div class="decision-strip"><strong>阶段判断</strong><p>现有流程已经解决“去哪找人、如何筛人、如何记录”。下一阶段要提高有效访谈、正式测试、完成测试和续用行为的转化率。</p></div>
+    </section>
+
+    <section class="report-section dark-section" id="feedback">
+      <header class="section-heading light-heading">
+        <span class="section-no">02</span>
+        <div><p>FEEDBACK & QUALITY</p><h2>用户案例、质量与 Bug</h2></div>
+        <p>按证据等级处理反馈，避免把市场线索直接当成产品结论。</p>
+      </header>
+      <div class="image-copy-layout reverse">
+        <div class="case-list">
+          <article><span class="case-tag strong">P0 · 专业制作</span><h3>短剧与番剧团队</h3><p>关注人物一致性、抽卡率、可交付分钟数、多人协作及维护负担。</p><small>验证：选择一个高返工镜头，同素材比较首次可用率与总耗时。</small></article>
+          <article><span class="case-tag medium">P1 · 高频业务</span><h3>电商与广告素材</h3><p>关注批量生成、筛选、尺寸适配、人工时间及投流时效。</p><small>验证：比较从对标素材到可交付文件的完整流程。</small></article>
+          <article><span class="case-tag">生态 · 技术用户</span><h3>ComfyUI 与本地创作者</h3><p>关注节点兼容、显存门槛、首次成功时间、复现和故障恢复。</p><small>验证：迁移已有工作流，记录依赖、运行与恢复证据。</small></article>
+        </div>
+        <figure class="section-image dark-image"><img src="./assets/02-feedback.png" alt="影片经过检查镜并产生通过返工和故障标记的概念插画" /><figcaption>通过 / 返工 / 故障：反馈必须落到明确结果</figcaption></figure>
+      </div>
+
+      <div class="feedback-matrix">
+        <article><div><span>QUALITY</span><h3>成片质量</h3></div><p>远景人脸、肢体结构、人物一致性、声音与提示词遵循。</p><b>现状：有风险线索，缺少统一评分。</b></article>
+        <article><div><span>PERFORMANCE</span><h3>性能异常</h3></div><p>个别样本出现 4-step 慢于 20-step；1080P 长等待反馈待日志核实。</p><b>现状：异常存在，根因未闭合。</b></article>
+        <article><div><span>RELIABILITY</span><h3>运行故障</h3></div><p>测试记录中存在 Timeout、Failed、Crashed 和未测试项。</p><b>现状：能确认发生，缺少完整复现链路。</b></article>
+        <article><div><span>EXPERIENCE</span><h3>使用体验</h3></div><p>参数难理解、等待预期不清、失败后如何继续仍需产品统一。</p><b>现状：已有方案，正式体验待验证。</b></article>
+      </div>
+
+      <div class="evidence-rule">
+        <h3>一条反馈进入研发，需要满足什么？</h3>
+        <ol><li><b>可追溯</b><span>原始记录、任务 ID 或成片</span></li><li><b>有影响</b><span>说明返工、时间、成本或交付后果</span></li><li><b>可复现</b><span>设备、版本、输入、参数与日志完整</span></li><li><b>可验收</b><span>明确修复后的通过标准</span></li></ol>
+      </div>
+    </section>
+
+    <section class="report-section" id="judgment">
+      <header class="section-heading">
+        <span class="section-no">03</span>
+        <div><p>POINT OF VIEW</p><h2>我对产品和现状的判断</h2></div>
+        <p>以下是基于现阶段用户证据和测试数据形成的工作判断。</p>
+      </header>
+      <div class="judgment-layout">
+        <figure class="section-image portrait-image"><img src="./assets/03-judgment.png" alt="芯片和可用影片画面在精密天平上进行价值判断的概念插画" /><figcaption>技术能力只有落在可用结果上，才形成产品价值</figcaption></figure>
+        <div class="judgment-list">
+          <article><b>01</b><div><h3>价值必须在具体任务中成立</h3><p>用户采用产品，是因为维护更少、得到可用结果更快，或交付更确定。</p></div></article>
+          <article><b>02</b><div><h3>先做少量高频场景</h3><p>电商产品短镜头、短剧桥接镜头、已有工作流迁移，适合形成首批标准案例。</p></div></article>
+          <article><b>03</b><div><h3>本地与云端按任务分工</h3><p>对成熟团队，局部工作流、API 或设备节点可能比整体迁移更合理。</p></div></article>
+          <article><b>04</b><div><h3>运营需要唯一支持矩阵</h3><p>能力、界面、手册和对外承诺必须共享同一版本和证据状态。</p></div></article>
+          <article><b>05</b><div><h3>下一阶段重心是案例闭环</h3><p>每个案例都应讲清原方案、问题、改善、限制和用户继续使用的行为。</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="report-section performance-section" id="capability">
+      <header class="section-heading">
+        <span class="section-no">04</span>
+        <div><p>CAPABILITY & PERFORMANCE</p><h2>功能性与性能的区别</h2></div>
+        <p>把“有没有”“好不好”“快不快”“稳不稳”拆开评估。</p>
+      </header>
+      <div class="image-copy-layout">
+        <figure class="section-image"><img src="./assets/04-performance.png" alt="两套并行生成引擎和影片队列的性能实验室概念插画" /><figcaption>同一个功能，在不同硬件上表现为等待、范围和稳定性的差异</figcaption></figure>
+        <div class="definition-grid">
+          <article><span>A</span><h3>功能</h3><p>能完成什么？</p><small>输入、输出和接口是否完整</small></article>
+          <article><span>B</span><h3>质量</h3><p>结果是否可用？</p><small>一致性、动作、瑕疵和可用率</small></article>
+          <article><span>C</span><h3>性能</h3><p>多久完成多少？</p><small>P50、P90、冷启动、吞吐</small></article>
+          <article><span>D</span><h3>稳定性</h3><p>能否持续运行？</p><small>失败率、重试、恢复和长时任务</small></article>
+        </div>
+      </div>
+
+      <div class="benchmark">
+        <div class="benchmark-intro"><span>768P · 5 秒 · Speed 加速配置</span><h3>典型等待与长尾等待</h3><p>基于现有独立性能记录。样本混合不同生成任务，用于理解硬件档位差异，暂不作为服务承诺。</p></div>
+        <div class="bar-chart" aria-label="5070 Ti 和 5090 的 P50 P90 等待时间比较">
+          <div class="axis"><span>0</span><span>3</span><span>6</span><span>9 分钟</span></div>
+          <div class="bar-row"><strong>5070 Ti</strong><div class="bar-track"><i class="p90" style="width:94%"></i><i class="p50" style="width:36%"></i></div><span><b>3.2</b> / 8.5</span></div>
+          <div class="bar-row"><strong>5090</strong><div class="bar-track"><i class="p90" style="width:37%"></i><i class="p50" style="width:30%"></i></div><span><b>2.7</b> / 3.3</span></div>
+          <div class="legend"><span><i class="legend-p50"></i>P50 典型等待</span><span><i class="legend-p90"></i>P90 长尾等待</span></div>
+        </div>
+      </div>
+
+      <div class="boundary-notes"><span>当前边界</span><p>加速配置已有速度证据，质量影响仍需盲评；H3 结果不能外推至 LTX 或 SenseNova；商业指标应使用“得到一个可用镜头的总时间”。</p></div>
+    </section>
+
+    <section class="report-section final-section" id="unknowns">
+      <header class="section-heading">
+        <span class="section-no">05</span>
+        <div><p>OPEN QUESTIONS</p><h2>未规划完整和不清晰的内容</h2></div>
+        <p>这些问题会直接影响招募、测试、技术排期和对外承诺。</p>
+      </header>
+      <div class="image-copy-layout reverse">
+        <div class="open-questions">
+          <article><span>01</span><h3>用户与场景</h3><p>首期优先服务哪两类用户、哪三个真实任务？</p></article>
+          <article><span>02</span><h3>产品交付形态</h3><p>硬件、Dash、推理引擎、API、工作流服务如何分层？</p></article>
+          <article><span>03</span><h3>SKU 与数据口径</h3><p>5060 Ti、5070 Ti、5090 与 5090D v2 如何对应正式产品？</p></article>
+          <article><span>04</span><h3>支持矩阵</h3><p>模型、模式、素材、尺寸、时长和设备的唯一真源在哪里？</p></article>
+          <article><span>05</span><h3>任务与故障闭环</h3><p>排队、取消、重试、断线、部分失败分别如何处理？</p></article>
+          <article><span>06</span><h3>服务与商业边界</h3><p>工作流维护、技术支持、第三方费用和收费范围如何界定？</p></article>
+        </div>
+        <figure class="section-image"><img src="./assets/05-roadmap.png" alt="由已连接模块和待连接模块组成的产品路线概念插画" /><figcaption>把分散的假设收敛为共同认可的产品边界</figcaption></figure>
+      </div>
+
+      <div class="meeting-output">
+        <p>建议本次会议确认</p>
+        <div><article><b>01</b><h3>产品支持矩阵</h3><span>能力、设备、验证状态和对外口径</span></article><article><b>02</b><h3>问题清单</h3><span>负责人、优先级、日志和验收条件</span></article><article><b>03</b><h3>三张任务卡</h3><span>原方案、成功标准和同任务对照</span></article></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div><span class="brand-mark">S↗</span><strong>Siltok 用户运营与产品洞察</strong></div>
+    <p>资料来源：用户研究、建联记录、远程测试工作台、性能测试表与产品方案文档。</p>
+    <a href="#top">回到顶部 ↑</a>
+  </footer>
+  <script src="./script.js"></script>
+</body>
+</html>
