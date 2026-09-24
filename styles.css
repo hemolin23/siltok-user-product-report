@@ -59,6 +59,24 @@ button { font: inherit; }
 .journey-intro { display: grid; grid-template-columns: 180px 1fr; align-items: center; gap: 22px; padding: 26px 30px; color: #fff; background: var(--night); }
 .journey-intro strong { color: var(--acid); font-size: 12px; letter-spacing: .06em; }
 .journey-intro p { margin: 0; font-size: 18px; font-weight: 700; line-height: 1.55; }
+.exchange-frame { display: grid; grid-template-columns: minmax(0,1fr) 210px minmax(0,1fr); gap: 1px; margin-top: 22px; border: 1px solid var(--line); background: var(--line); }
+.exchange-side { padding: 30px; background: #fff; }
+.exchange-side > span, .exchange-sequence > span { color: var(--blue); font-size: 10px; font-weight: 900; letter-spacing: .11em; }
+.exchange-side h3 { margin: 11px 0 20px; font-size: 21px; line-height: 1.3; }
+.exchange-side ul { margin: 0; padding: 0; list-style: none; }
+.exchange-side li { padding: 9px 0; border-top: 1px solid var(--line); color: #46536b; font-size: 13px; }
+.exchange-center { padding: 26px 19px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; color: #fff; background: var(--blue); }
+.exchange-center span { color: #cfddff; font-size: 11px; font-weight: 750; }
+.exchange-center strong { margin: 12px 0; font-size: 27px; line-height: 1.16; }
+.exchange-center small { color: #d6e3ff; font-size: 11px; line-height: 1.6; }
+.exchange-sequence { margin-top: 18px; padding: 25px 30px; color: #fff; background: var(--night); }
+.exchange-sequence > span { color: var(--acid); }
+.exchange-sequence p { margin: 10px 0 5px; font-size: clamp(16px, 2.2vw, 25px); font-weight: 850; letter-spacing: -.025em; }
+.exchange-sequence i { padding: 0 5px; color: var(--acid); font-style: normal; }
+.exchange-sequence small { color: #c7d3e9; font-size: 11px; }
+.exchange-warning { display: grid; grid-template-columns: 185px 1fr; gap: 25px; align-items: center; padding: 25px 30px; background: #e9f1ff; }
+.exchange-warning strong { color: var(--blue-dark); font-size: 13px; }
+.exchange-warning p { margin: 0; color: #3c4c68; font-size: 13px; }
 .journey-list { margin-top: 18px; border-top: 2px solid var(--ink); }
 .journey-list article { display: grid; grid-template-columns: minmax(195px, .32fr) 1fr; gap: 42px; padding: 36px 0; border-bottom: 1px solid var(--line); }
 .journey-stage span { color: var(--blue); font-size: 11px; font-weight: 900; letter-spacing: .12em; }
@@ -371,6 +389,9 @@ button { font: inherit; }
 .footer a { color: var(--acid); font-weight: 800; }
 
 @media (max-width: 980px) {
+  .exchange-frame { grid-template-columns: 1fr; }
+  .exchange-center { min-height: 145px; }
+  .exchange-warning { grid-template-columns: 1fr; gap: 8px; }
   .journey-answer { grid-template-columns: 1fr; gap: 11px; }
   .journey-close { grid-template-columns: 1fr; }
   .topbar nav { display: none; }
